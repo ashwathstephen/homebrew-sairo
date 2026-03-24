@@ -5,20 +5,20 @@
 class Sairo < Formula
   desc "Fast S3 storage browser CLI — sub-second queries on petabyte-scale buckets"
   homepage "https://github.com/ashwathstephen/sairo"
-  version "2.1.0"
+  version "2.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ashwathstephen/sairo/releases/download/v2.1.0/sairo_2.1.0_darwin_amd64.tar.gz"
-      sha256 "18c59995a2a645e1ac0a6d418252a3fcddda679e5559956c93ecc07428cbabbf"
+      url "https://github.com/ashwathstephen/sairo/releases/download/v2.2.0/sairo_2.2.0_darwin_amd64.tar.gz"
+      sha256 "c592d9db6184abd8688efe1bde636538dce61cee6c5d7b3837aaf03ad1d85899"
 
       define_method(:install) do
         bin.install "sairo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ashwathstephen/sairo/releases/download/v2.1.0/sairo_2.1.0_darwin_arm64.tar.gz"
-      sha256 "fd952da7a3e4b0c224089ab1f74b9a6d8916293d801a4eacf7124b434dd456ec"
+      url "https://github.com/ashwathstephen/sairo/releases/download/v2.2.0/sairo_2.2.0_darwin_arm64.tar.gz"
+      sha256 "84fa385f32b3ec017cbcecd925d3935d660522cbc86a90d7338eb560a6beda61"
 
       define_method(:install) do
         bin.install "sairo"
@@ -28,15 +28,15 @@ class Sairo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ashwathstephen/sairo/releases/download/v2.1.0/sairo_2.1.0_linux_amd64.tar.gz"
-      sha256 "0f57d2c0d460c6ee4d07720672a81e293a6e04e0b128e1485845252c4fa269bd"
+      url "https://github.com/ashwathstephen/sairo/releases/download/v2.2.0/sairo_2.2.0_linux_amd64.tar.gz"
+      sha256 "86d060198c2dbfad9de27904bc780fbcc4d941d3d2e669be5b1b4407ee3bd2d0"
       define_method(:install) do
         bin.install "sairo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ashwathstephen/sairo/releases/download/v2.1.0/sairo_2.1.0_linux_arm64.tar.gz"
-      sha256 "b169f2e0e9afae64e32852bf34ac2f344d996d2555aa84d0257a645a439bca0e"
+      url "https://github.com/ashwathstephen/sairo/releases/download/v2.2.0/sairo_2.2.0_linux_arm64.tar.gz"
+      sha256 "9781dad533ed6b3ce2d0327436630dda85d002009b53f3c19391e34ad640982e"
       define_method(:install) do
         bin.install "sairo"
       end
