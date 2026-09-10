@@ -10,7 +10,7 @@ class Sairo < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ashwathstephen/sairo/releases/download/v3.7.0/sairo_3.7.0_darwin_amd64.tar.gz"
-      sha256 "9edaa4054e437e4a14d4e27aea05a69db3f1480406eb5375dfbeabcdfa592009"
+      sha256 "fa1537e986cf244fde019445127a4cef8b8c270a1f92cf233c85fbda75859193"
 
       define_method(:install) do
         bin.install "sairo"
@@ -18,7 +18,7 @@ class Sairo < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/ashwathstephen/sairo/releases/download/v3.7.0/sairo_3.7.0_darwin_arm64.tar.gz"
-      sha256 "c0d66a7c834aacd49cad749d6fbba1c8c0f2e5257637889fb0f9e4c3df3ef130"
+      sha256 "74f15218bca2d816c3176cb7b6c5a3b9b7f120631944fa2b43061b22c43aec00"
 
       define_method(:install) do
         bin.install "sairo"
@@ -29,14 +29,14 @@ class Sairo < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/ashwathstephen/sairo/releases/download/v3.7.0/sairo_3.7.0_linux_amd64.tar.gz"
-      sha256 "8a77e316ded3d01ee69e94ceedd4ef8c5bab929f1a68c0ec51303c3a717d8cf5"
+      sha256 "13034f31e0dc504ea515e8630f341eec1acc2fb5424ed28b6853bc3fc7a00cab"
       define_method(:install) do
         bin.install "sairo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ashwathstephen/sairo/releases/download/v3.7.0/sairo_3.7.0_linux_arm64.tar.gz"
-      sha256 "bafa145343a88a49d2b70988c042c2525066a4f6ad424bec614fa415f054a92b"
+      sha256 "f35fb373aee7a8121ea9c2559bad931fcf84fc8b2ce9f6ceead1be856159f7fc"
       define_method(:install) do
         bin.install "sairo"
       end
